@@ -1,0 +1,89 @@
+.sliderSlideDiv,
+.sliderControls {
+  position: absolute;
+}
+
+.sliderSlideDiv,
+.sliderSlide {
+  transition: all 0.5s ease-out;
+  width: 100%;
+  height: 100%;
+}
+
+/* controls */
+.sliderControls {
+  top: 41%;
+  left: 20px;
+  padding: 0 0.63rem;
+  z-index: 5;
+  text-align: center;
+}
+
+.sliderButton {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all ease 0.2s;
+}
+
+.sliderButton:not(:last-child) {
+  margin-bottom: 0.63rem;
+}
+
+.sliderButton {
+  border: 2px solid #fff;
+  outline: none;
+  background-color: #fff;
+}
+
+.sliderButton:hover,
+.sliderButton:focus {
+  opacity: 1;
+}
+
+.sliderSelected {
+  background-color: #cb411f00;
+}
+
+/* emoji styles */
+
+.emoji {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.emojiWrapper:hover .emoji:not(:hover) {
+  opacity: 0.5;
+}
+
+.emoji:hover {
+  opacity: 1;
+}
+
+.label {
+  scale: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.emoji:hover .label {
+  scale: 1;
+}
+
+/* submit slide */
+
+.submitSlide {
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.rightAnimate {
+  width: 5%;
+}
+
+.leftAnimate {
+  width: 95%;
+  padding: 50px;
+}
